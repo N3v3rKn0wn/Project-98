@@ -1,11 +1,15 @@
+global data_a,data_b
+def swapFileData():    
+    with open('sample1.txt') as f1, open('sample2.txt') as f2:
+        data_a = f1.read()
+        data_b = f2.read()
+        
+        
+    open('file_1.txt','w').write(data_b)
+    open('file_2.txt','w').write(data_a)
 
-global file1_contents,file2_contents
-with open('sample1.txt') as f1, open('sample2.txt') as f2:
-    file1_contents = f1.read()
-    file2_contents = f2.read()
+    print('Heh you got him')
+    print('data_a: {}, data_b: {}!'.format(file1_contents,file2_contents))
 
-# write the files, swapping them.
-open('sample1','w').write(file2_contents)
-open('sampl2','w').write(file1_contents)
 
-print('sample 1: {}, sample 2: {}!'.format(file1_contents,file2_contents))
+swapFileData()
