@@ -8,5 +8,4 @@ with open('sample1.txt') as f1, open('sample2.txt') as f2:
 open('sample1','w').write(file2_contents)
 open('sampl2','w').write(file1_contents)
 
-print('Successfully swapped the two files!')
 print('sample 1: {}, sample 2: {}!'.format(file1_contents,file2_contents))
