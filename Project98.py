@@ -8,6 +8,6 @@ def swapFileData():
 open('file_1.txt','w').write(data_b)
 open('file_2.txt','w').write(data_a)
 
-print('Successfully swapped the two files!')
+print('Heh you got him')
 print('data_a: {}, data_b: {}!'.format(file1_contents,file2_contents))
 swapFileData()
